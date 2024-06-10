@@ -23,7 +23,6 @@ namespace PR29_Galkin.Pages.Clubs.Elements
         public Item(Models.Clubs Club, Main Main)
         {
             InitializeComponent();
-            if (Pages.Logins.LoginWin.IsAdmin == false) BthItem.Visibility = Visibility.Hidden;
             this.Name.Text = Club.Name;
             this.Address.Text = Club.Address;
             this.WorkTime.Text = Club.WorkTime;

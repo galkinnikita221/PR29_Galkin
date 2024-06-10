@@ -25,7 +25,6 @@ namespace PR29_Galkin.Pages.Clubs
         public Main()
         {
             InitializeComponent();
-            if (Pages.Logins.LoginWin.IsAdmin == false) BthAdd.Visibility = Visibility.Hidden;
             foreach (Models.Clubs Club in AllClub.Clubs)
                 parent.Children.Add(new Elements.Item(Club, this));
         }
